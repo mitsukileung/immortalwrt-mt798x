@@ -10,13 +10,6 @@ Default login address: http://192.168.1.1 or http://immortalwrt.lan, username: _
 ## About immortalwrt-mt798x 
 - https://cmi.hanwckf.top/p/immortalwrt-mt798x/
 
-## Download
-Built firmware images are available for many architectures and come with a package selection to be used as WiFi home router. To quickly find a factory image usable to migrate from a vendor stock firmware to ImmortalWrt, try the *Firmware Selector*.
-
-- [ImmortalWrt Firmware Selector](https://firmware-selector.immortalwrt.org/)
-
-If your device is supported, please follow the **Info** link to see install instructions or consult the support resources listed below.
-
 ## Development
 To build your own firmware you need a GNU/Linux, BSD or MacOSX system (case sensitive filesystem required). Cygwin is unsupported because of the lack of a case sensitive file system.<br/>
 
@@ -56,8 +49,8 @@ To build your own firmware you need a GNU/Linux, BSD or MacOSX system (case sens
   - For more details, please see [Build system setup](https://openwrt.org/docs/guide-developer/build-system/install-buildsystem) documentation.
 
   ### Quickstart
-  1. Run `git clone -b <branch> --single-branch --filter=blob:none https://github.com/immortalwrt/immortalwrt` to clone the source code.
-  2. Run `cd immortalwrt` to enter source directory.
+  1. Run `git clone --depth=1 https://github.com/hanwckf/immortalwrt-mt798x.git` to clone the source code.
+  2. Run `cd immortalwrt-mt798x` to enter source directory.
   3. Run `./scripts/feeds update -a` to obtain all the latest package definitions defined in feeds.conf / feeds.conf.default
   4. Run `./scripts/feeds install -a` to install symlinks for all obtained packages into package/feeds/
   5. Run `make menuconfig` to select your preferred configuration for the toolchain, target system & firmware packages.
@@ -89,6 +82,6 @@ ImmortalWrt is licensed under [GPL-2.0-only](https://spdx.org/licenses/GPL-2.0-o
   <tr>
     <td><a href="https://dlercloud.com/"><img src="https://user-images.githubusercontent.com/22235437/111103249-f9ec6e00-8588-11eb-9bfc-67cc55574555.png" width="183" height="52" border="0" alt="Dler Cloud"></a></td>
     <td><a href="https://www.jetbrains.com/"><img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_square.png" width="120" height="120" border="0" alt="JetBrains Black Box Logo logo"></a></td>
-    <td><a href="https://osdn.net/"><img src="https://osdn.net/sflogo.php?group_id=13647&type=2" width="125" height="39" border="0" alt="OSDN"></a></td>
+    <td><a href="https://sourceforge.net/"><img src="https://sourceforge.net/sflogo.php?type=17&group_id=3663829" alt="SourceForge" width=200></a></td>
   </tr>
 </table>
